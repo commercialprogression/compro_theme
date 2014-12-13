@@ -1,0 +1,23 @@
+name = Stiff Drink
+description = HTML5, bourbon.io, neat, bitters based theme.
+core = 7.x
+
+; Regions
+regions[page_top] = Page top
+regions[header] = Header
+regions[highlighted] = Highlighted
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer
+regions[page_bottom] = Page bottom
+
+; Features
+features[] = logo
+
+; Stylesheets
+stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/style.css
+
+; Scripts
+
+; Settings
