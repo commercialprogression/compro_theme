@@ -14,13 +14,7 @@
   <?php if ($page['sidebar_first']): ?>
     <aside id="sidebar-first" class="column sidebar">
       <?php print render($page['sidebar_first']); ?>
-    </aside> <!-- /#sidebar -->
-  <?php endif; ?>
-  
-  <?php if ($page['sidebar_second']): ?>
-    <aside id="sidebar-second" class="column sidebar">
-      <?php print render($page['sidebar_second']); ?>
-    </aside> <!-- /#sidebar -->
+    </aside> <!-- /#sidebar-first -->
   <?php endif; ?>
 
   <footer id="footer">
