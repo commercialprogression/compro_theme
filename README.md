@@ -2,7 +2,7 @@
 Stiff Drink is a responsive HTML5 Drupal theme centered around the lightweight SASS mixin library [bourbon](http://bourbon.io). 
 
 ## Features ##
-Stiff Drink is not technically a starter theme but can probably be used as one like any other Drupal theme. It is very bare bones, but does contain a few things out of the box:
+Stiff Drink is not technically a starter theme but can probably be used as one like any other Drupal theme. It is very bare bones, but does contain a few things out of the box.
 * [Neat grid system](http://neat.bourbon.io)
 * [Bitters default styling and scaffolding](http://bitters.bourbon.io)
 
