@@ -3,8 +3,9 @@ Stiff Drink is a responsive HTML5 Drupal theme centered around the lightweight S
 
 ## Features ##
 Stiff Drink is not technically a starter theme but can probably be used as one like any other Drupal theme. It is very bare bones, but does contain a few things out of the box.
-* Grid system - [Neat](http://neat.bourbon.io)
-* Scaffolding/Structure - [Bitters](http://bitters.bourbon.io)
+* Neat grid system
+* Bitters scaffolding/structure
+
 
 ## Dependencies ##
 The theme needs the wonderful [blockify](https://www.drupal.org/project/blockify) module to operate properly, without it you would need to manually add things back into the template files like logo, page title, etc.
