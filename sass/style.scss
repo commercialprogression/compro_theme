@@ -1,10 +1,10 @@
 
 // Import bourbon, neat, and bitters.
-@import "../bourbon/bourbon";
-@import "../base/grid-settings";
-@import "../neat/neat";
-@import "../base/base";
+@import "bourbon/bourbon";
+@import "base/grid-settings";
+@import "neat/neat";
+@import "base/base";
 
 // Import custom and layout files.
-@import "../base/layout";
+@import "base/layout";
 @import "custom";

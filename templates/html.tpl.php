@@ -15,5 +15,8 @@
     <?php print $page_top; ?>
     <?php print $page; ?>
     <?php print $page_bottom; ?>
+    <?php if (theme_get_setting('stiff_drink_livereload')): ?>
+      <script src="//localhost:35729/livereload.js"></script>
+    <?php endif; ?>
 </body>
 </html>

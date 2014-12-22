@@ -21,3 +21,4 @@ stylesheets[all][] = css/style.css
 ; Scripts
 
 ; Settings
+settings[stiff_drink_livereload] = 0
