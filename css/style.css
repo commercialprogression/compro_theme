@@ -189,6 +189,9 @@ select {
   max-width: 100%;
   width: auto; }
 
+.form-submit {
+  margin-right: 0.625em; }
+
 table {
   border-collapse: separate;
   border-spacing: 0; }
@@ -227,10 +230,17 @@ table {
             font-size: .8em; } }
 
 ul,
-ol {
+ol,
+.item-list ul,
+.item-list ol {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+  ul li,
+  ol li,
+  .item-list ul li,
+  .item-list ol li {
+    margin: 0; }
 dl {
   margin-bottom: 0.75em; }
   dl dt {
