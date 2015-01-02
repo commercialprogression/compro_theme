@@ -1,0 +1,31 @@
+@mixin message($color) {
+  display: block;
+  font-weight: bold;
+  margin-bottom: $base-spacing / 2;
+  padding: $base-spacing / 2;
+  background: $color;
+  border: 0;
+  color: darken($color, 60);
+  text-align: center;
+
+  a {
+    color: darken($color, 70);
+    border-bottom: 1px solid transparentize(darken($color, 70), .7);
+
+    &:hover {
+      color: darken($color, 90);
+    }
+  }
+}
+
+div.error {
+  @include message($error-color);
+}
+
+div.status {
+  @include message($success-color);
+}
+
+div.warning {
+  @include message($alert-color);
+}

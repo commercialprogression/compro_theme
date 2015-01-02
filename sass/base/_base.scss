@@ -12,9 +12,13 @@
 // Extends
 @import "extends/button";
 @import "extends/clearfix";
-@import "extends/errors";
-@import "extends/flashes";
 @import "extends/hide-text";
+
+// Optional Components
+// @import "components/breadcrumbs";
+// @import "components/messages";
+// @import "components/pager";
+// @import "components/tabs";
 
 // Typography and Elements
 @import "typography";

@@ -17,6 +17,7 @@ html {
  * http://bitters.bourbon.io
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
+/* Optional component variables, uncomment the component in base/_base.scss */
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
@@ -189,25 +190,41 @@ select {
   width: auto; }
 
 table {
-  border-collapse: collapse;
-  margin: 0.75em 0;
-  table-layout: fixed;
-  width: 100%; }
-
-th {
-  border-bottom: 1px solid #b7b7b7;
-  font-weight: bold;
-  padding: 0.75em 0;
-  text-align: left; }
-
-td {
-  border-bottom: 1px solid #DDD;
-  padding: 0.75em 0; }
-
-tr,
-td,
-th {
-  vertical-align: middle; }
+  border-collapse: separate;
+  border-spacing: 0; }
+  table thead th {
+    background-color: white;
+    padding: 0.75em 1em;
+    border-bottom: 0px; }
+  table tbody {
+    background-color: white; }
+    table tbody tr:hover > td, table tbody tr:hover > th {
+      background-color: #fafafa; }
+    table tbody tr:first-child td {
+      border-top: 2px solid #DDD; }
+    table tbody tr.odd,
+    table tbody tr.even {
+      background-color: white; }
+    table tbody td {
+      padding: 0.75em 1em;
+      border-top: 1px solid #DDD;
+      border-bottom: 0px; }
+      table tbody td button {
+        padding: .5em 1em .6em;
+        font-size: .7em;
+        margin-right: 0.5em;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: .3em;
+        outline: none; }
+        @media screen and (min-width: 40em) {
+          table tbody td button {
+            width: auto;
+            font-size: .8em;
+            margin-bottom: 0; } }
+        @media screen and (min-width: 53.75em) {
+          table tbody td button {
+            font-size: .8em; } }
 
 ul,
 ol {
@@ -240,7 +257,7 @@ input[type="submit"] {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0.9375em; }
+  padding: 1.5625em 0.9375em; }
   #page:after {
     content: "";
     display: table;
@@ -271,7 +288,5 @@ input[type="submit"] {
       float: none; }
       .one-sidebar #sidebar-first:last-child {
         margin-right: 0; } }
-
-/* Place custom styles in this file */
 
 /*# sourceMappingURL=style.css.map */

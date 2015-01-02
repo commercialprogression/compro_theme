@@ -3,7 +3,7 @@
 
 #page {
   @include outer-container;
-  padding: 0 em(15);
+  padding: em(25) em(15);
 }
 
 // Sidebar layout
