@@ -281,6 +281,15 @@ input[type="submit"] {
   float: left; }
   .one-sidebar #content:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 30em) {
+    .one-sidebar #content {
+      float: left;
+      display: block;
+      margin-right: 14.28571%;
+      width: 100%;
+      float: none; }
+      .one-sidebar #content:last-child {
+        margin-right: 0; } }
 .one-sidebar #sidebar-first {
   float: left;
   display: block;
