@@ -6,7 +6,6 @@
   </header> <!-- /#header -->
 
   <section id="content" class="column">
-    <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
     <a id="main-content"></a>
     <?php print render($page['content']); ?>
   </section> <!-- /#content -->
