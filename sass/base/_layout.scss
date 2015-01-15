@@ -12,6 +12,12 @@
   #content {
     @include span-columns(7);
     float: left;
+    
+    @include media($small-screen-down) {
+      @include span-columns(2);
+      float: none;
+    }
+    
   }
   
   #sidebar-first {
