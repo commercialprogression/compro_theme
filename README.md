@@ -12,5 +12,5 @@ Stiff Drink is not technically a starter theme but can probably be used as one l
 The theme needs the wonderful [blockify](https://www.drupal.org/project/blockify) module to operate properly, without it you would need to manually add things back into the template files like logo, page title, etc.
 
 ## Recommended ##
-This theme place nicely with the compro_grunt repo, download it here for 6 dollars:
+This theme plays nicely with the compro_grunt repo, download it here for 6 dollars:
 https://bitbucket.org/alexfisher/compro_grunt
