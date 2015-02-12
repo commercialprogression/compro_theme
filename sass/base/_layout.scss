@@ -8,7 +8,7 @@
 
 // Sidebar layout
 .one-sidebar {
-  
+
   #content {
     @include span-columns(7);
     float: left;
@@ -30,5 +30,10 @@
     }
     
   }
+
+  #footer {
+    clear: both;
+  }
   
 }
+

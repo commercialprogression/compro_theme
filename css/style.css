@@ -307,5 +307,7 @@ input[type="submit"] {
       float: none; }
       .one-sidebar #sidebar-first:last-child {
         margin-right: 0; } }
+.one-sidebar #footer {
+  clear: both; }
 
 /*# sourceMappingURL=style.css.map */
