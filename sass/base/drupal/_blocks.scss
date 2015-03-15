@@ -1,0 +1,30 @@
+
+#block-system-main-menu {
+
+  .mobile-menu-icon {
+    display: none;
+
+    @include media($large-screen-down) {
+      display: block;
+    }
+
+  }
+
+  #mobile-menu-toggle {
+    display: none;
+
+    &:checked + .menu {
+      display: block;
+    }
+
+  }
+
+  .menu {
+
+    @include media($large-screen-down) {
+      display: none;
+    }
+
+  }
+
+}

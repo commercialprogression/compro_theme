@@ -26,4 +26,7 @@
 @import "tables";
 @import "lists";
 @import "buttons";
-@import "layout";
+
+// Drupal Specific
+@import "drupal/layout";
+@import "drupal/blocks";

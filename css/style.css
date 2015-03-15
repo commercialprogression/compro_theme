@@ -310,4 +310,17 @@ input[type="submit"] {
 .one-sidebar #footer {
   clear: both; }
 
+#block-system-main-menu .mobile-menu-icon {
+  display: none; }
+  @media screen and (max-width: 53.75em) {
+    #block-system-main-menu .mobile-menu-icon {
+      display: block; } }
+#block-system-main-menu #mobile-menu-toggle {
+  display: none; }
+  #block-system-main-menu #mobile-menu-toggle:checked + .menu {
+    display: block; }
+@media screen and (max-width: 53.75em) {
+  #block-system-main-menu .menu {
+    display: none; } }
+
 /*# sourceMappingURL=style.css.map */
