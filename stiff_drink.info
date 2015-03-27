@@ -17,7 +17,7 @@ regions[page_bottom] = Page bottom
 features[] = logo
 
 ; Stylesheets
-stylesheets[all][] = css/normalize.css
+; stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/style.css
 
 ; Scripts
