@@ -423,3 +423,17 @@ function stiff_drink_views_mini_pager($vars) {
     return theme('links', array('links' => $links, 'attributes' => array('class' => array('links', 'pager', 'views-mini-pager'))));
   }
 }
+
+/**
+ * Implements hook_css_alter()
+ */
+function stiff_drink_css_alter(&$css) {
+  // Remove Drupal core CSS.
+  if (theme_get_setting('stiff_drink_disable_core_css')) {
+    foreach($css as $path => $values) {
+      if(strpos($path, 'modules/') === 0) {
+        unset($css[$path]);
+      }
+    }
+  }
+}

@@ -13,6 +13,11 @@ module.exports = function(grunt) {
       css: {
         files: ['sass/**/*.scss'],
         tasks: ['sass']
+      },
+
+      templates: {
+        files: 'templates/**/*.tpl.php',
+        tasks: ['drush:cc_theme_registry']
       }
     },
 
@@ -49,6 +54,12 @@ module.exports = function(grunt) {
           injectChanges: false
         }
       }
+    },
+
+    drush: {
+      cc_theme_registry: {
+        args: ['cc', 'theme-registry']
+      }
     }
 
   });
@@ -58,6 +69,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
+  grunt.loadNpmTasks('grunt-drush');
 
   grunt.registerTask('default', ['browserSync', 'watch']);
 

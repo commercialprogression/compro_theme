@@ -1,31 +1,31 @@
 
 /* Simple layout styling for Stiff Drink theme */
 
-#page {
+.page {
   @include outer-container;
   padding: em(25) em(15);
 }
 
 // Sidebar layout
-.one-sidebar {
+.sidebar-first {
 
-  #content {
+  .region {
     @include span-columns(7);
     float: left;
     
-    @include media($small-screen-down) {
-      @include span-columns(2);
+    @include media($large-screen-down) {
+      @include span-columns(8);
       float: none;
     }
     
   }
   
-  #sidebar-first {
+  .region-sidebar-first {
     @include span-columns(4);
     float: right;
     
-    @include media($small-screen-down) {
-      @include span-columns(2);
+    @include media($large-screen-down) {
+      @include span-columns(8);
       float: none;
     }
     
