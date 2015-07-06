@@ -14,9 +14,4 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
-  <?php if (theme_get_setting('stiff_drink_browsersync') && theme_get_setting('stiff_drink_browsersync_version')): ?>
-    <script type='text/javascript' id="__bs_script__">//<![CDATA[
-      document.write("<script async src='//HOST:3000/browser-sync/browser-sync-client.<?php print theme_get_setting('stiff_drink_browsersync_version'); ?>.js'><\/script>".replace(/HOST/g, location.hostname).replace(/PORT/g, location.port));
-      //]]></script>
-  <?php endif; ?>
 </div></body></html>
