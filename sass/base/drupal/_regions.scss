@@ -1,0 +1,12 @@
+
+/* Region styles for Stiff Drink */
+
+// General
+.region {
+
+  .inner {
+    @include outer_container();
+    @include padding(0 $base-spacing);
+  }
+
+}

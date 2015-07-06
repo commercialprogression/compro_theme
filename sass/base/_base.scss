@@ -6,12 +6,11 @@
 // Variables
 @import "variables";
 
-// Neat Settings -- uncomment if using Neat -- must be imported before Neat
-// @import "grid-settings";
-
 // Extends
 @import "extends/button";
 @import "extends/clearfix";
+@import "extends/errors";
+@import "extends/flashes";
 @import "extends/hide-text";
 
 // Optional Components
@@ -20,12 +19,16 @@
 // @import "components/pager";
 // @import "components/tabs";
 
+// Drupal Specific
+@import "drupal/regions";
+@import "drupal/blocks";
+@import "drupal/entities";
+@import "drupal/pages";
+
+
 // Typography and Elements
 @import "typography";
 @import "forms";
 @import "tables";
 @import "lists";
 @import "buttons";
-
-// Drupal Specific
-@import "drupal/layout";

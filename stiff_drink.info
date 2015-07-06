@@ -15,13 +15,14 @@ regions[page_bottom] = Page bottom
 
 ; Features
 features[] = logo
+features[] = favicon
 
 ; Stylesheets
-; stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/normalize.css
 stylesheets[all][] = css/style.css
 
 ; Scripts
+scripts[] = js/behavior.js
 
 ; Settings
-settings[stiff_drink_browsersync] = 0
-settings[stiff_drink_disable_core_css] = 1
+settings[stiff_drink_disable_core_css] = 0

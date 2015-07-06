@@ -1,15 +1,9 @@
 ul,
-ol,
-.item-list ul,
-.item-list ol {
+ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
 
-  li {
-    margin: 0;
-  }
-  
   &%default-ul {
     list-style-type: disc;
     margin-bottom: $base-spacing / 2;
