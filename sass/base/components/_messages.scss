@@ -19,13 +19,13 @@
 }
 
 div.error {
-  @include message($error-color);
+  @include message(#fbe3e4);
 }
 
 div.status {
-  @include message($success-color);
+  @include message(#e6efc2);
 }
 
 div.warning {
-  @include message($alert-color);
+  @include message(#fff6bf);
 }

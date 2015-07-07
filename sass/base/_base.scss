@@ -1,34 +1,22 @@
-/* Bitters 0.10.0
- * http://bitters.bourbon.io
- * Copyright 2013–2014 thoughtbot, inc.
- * MIT License */
+// Bitters 1.0.0
+// http://bitters.bourbon.io
+// Copyright 2013-2015 thoughtbot, inc.
+// MIT License
 
-// Variables
 @import "variables";
 
-// Extends
-@import "extends/button";
-@import "extends/clearfix";
-@import "extends/errors";
-@import "extends/flashes";
-@import "extends/hide-text";
+@import "buttons";
+@import "forms";
+@import "lists";
+@import "tables";
+@import "typography";
 
 // Optional Components
-// @import "components/breadcrumbs";
-// @import "components/messages";
-// @import "components/pager";
-// @import "components/tabs";
+@import "components/messages";
+@import "components/tabs";
 
 // Drupal Specific
 @import "drupal/regions";
 @import "drupal/blocks";
 @import "drupal/entities";
 @import "drupal/pages";
-
-
-// Typography and Elements
-@import "typography";
-@import "forms";
-@import "tables";
-@import "lists";
-@import "buttons";
