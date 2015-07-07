@@ -10,91 +10,91 @@
   font-family: 'opensans';
   font-style: normal;
   font-weight: 100;
-  src: url('../fonts/opensans-l.eot');
-  src: url('../fonts/opensans-l.eot??#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-l.woff2') format('woff2')
-    url('../fonts/opensans-l.woff') format('woff');
+  src: url('../fonts/opensans/opensans-1/opensans-l.eot');
+  src: url('../fonts/opensans/opensans-1/opensans-l.eot??#iefix') format('embedded-opentype'),
+    url('../fonts/opensans/opensans-1/opensans-l.woff2') format('woff2'),
+    url('../fonts/opensans/opensans-1/opensans-l.woff') format('woff');
 }
   @font-face {
     font-family: 'opensans';
     font-style: italic;
     font-weight: 100;
-    src: url('../fonts/opensans-li.eot');
-    src: url('../fonts/opensans-li.eot??#iefix') format('embedded-opentype'),
-      url('../fonts/opensans-li.woff2') format('woff2')
-      url('../fonts/opensans-li.woff') format('woff');
+    src: url('../fonts/opensans/opensans-1i/opensans-li.eot');
+    src: url('../fonts/opensans/opensans-1i/opensans-li.eot??#iefix') format('embedded-opentype'),
+      url('../fonts/opensans/opensans-1i/opensans-li.woff2') format('woff2'),
+      url('../fonts/opensans/opensans-1i/opensans-li.woff') format('woff');
   }
 @font-face {
   font-family: 'opensans';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/opensans.eot');
-  src: url('../fonts/opensans.eot??#iefix') format('embedded-opentype'),
-    url('../fonts/opensans.woff2') format('woff2'),
-    url('../fonts/opensans.woff') format('woff');
+  src: url('../fonts/opensans/opensans/opensans.eot');
+  src: url('../fonts/opensans/opensans/opensans.eot??#iefix') format('embedded-opentype'),
+    url('../fonts/opensans/opensans/opensans.woff2') format('woff2'),
+    url('../fonts/opensans/opensans/opensans.woff') format('woff');
 }
   @font-face {
     font-family: 'opensans';
     font-style: italic;
     font-weight: 400;
-    src: url('../fonts/opensans-i.eot');
-    src: url('../fonts/opensans-i.eot??#iefix') format('embedded-opentype'),
-      url('../fonts/opensans-i.woff2') format('woff2')
-      url('../fonts/opensans-i.woff') format('woff');
+    src: url('../fonts/opensans/opensans-i/opensans-i.eot');
+    src: url('../fonts/opensans/opensans-i/opensans-i.eot??#iefix') format('embedded-opentype'),
+      url('../fonts/opensans/opensans-i/opensans-i.woff2') format('woff2'),
+      url('../fonts/opensans/opensans-i/opensans-i.woff') format('woff');
   }
 @font-face {
   font-family: 'opensans';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/opensans-sb.eot');
-  src: url('../fonts/opensans-sb.eot??#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-sb.woff2') format('woff2'),
-    url('../fonts/opensans-sb.woff') format('woff');
+  src: url('../fonts/opensans/opensans-sb/opensans-sb.eot');
+  src: url('../fonts/opensans/opensans-sb/opensans-sb.eot??#iefix') format('embedded-opentype'),
+    url('../fonts/opensans/opensans-sb/opensans-sb.woff2') format('woff2'),
+    url('../fonts/opensans/opensans-sb/opensans-sb.woff') format('woff');
 }
   @font-face {
     font-family: 'opensans';
     font-style: italic;
     font-weight: 600;
-    src: url('../fonts/opensans-sbi.eot');
-    src: url('../fonts/opensans-sbi.eot??#iefix') format('embedded-opentype'),
-      url('../fonts/opensans-sbi.woff2') format('woff2'),
-      url('../fonts/opensans-sbi.woff') format('woff');
+    src: url('../fonts/opensans/opensans-sbi/opensans-sbi.eot');
+    src: url('../fonts/opensans/opensans-sbi/opensans-sbi.eot??#iefix') format('embedded-opentype'),
+      url('../fonts/opensans/opensans-sbi/opensans-sbi.woff2') format('woff2'),
+      url('../fonts/opensans/opensans-sbi/opensans-sbi.woff') format('woff');
   }
 @font-face {
   font-family: 'opensans';
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/opensans-b.eot');
-  src: url('../fonts/opensans-b.eot??#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-b.woff2') format('woff2'),
-    url('../fonts/opensans-b.woff') format('woff');
+  src: url('../fonts/opensans/opensans-b/opensans-b.eot');
+  src: url('../fonts/opensans/opensans-b/opensans-b.eot??#iefix') format('embedded-opentype'),
+    url('../fonts/opensans/opensans-b/opensans-b.woff2') format('woff2'),
+    url('../fonts/opensans/opensans-b/opensans-b.woff') format('woff');
 }
   @font-face {
     font-family: 'opensans';
     font-style: italic;
     font-weight: 700;
-    src: url('../fonts/opensans-bi.eot');
-    src: url('../fonts/opensans-bi.eot??#iefix') format('embedded-opentype'),
-      url('../fonts/opensans-bi.woff2') format('woff2'),
-      url('../fonts/opensans-bi.woff') format('woff');
+    src: url('../fonts/opensans/opensans-bi/opensans-bi.eot');
+    src: url('../fonts/opensans/opensans-bi/opensans-bi.eot??#iefix') format('embedded-opentype'),
+      url('../fonts/opensans/opensans-bi/opensans-bi.woff2') format('woff2'),
+      url('../fonts/opensans/opensans-bi/opensans-bi.woff') format('woff');
   }
 @font-face {
   font-family: 'opensans';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/opensans-xb.eot');
-  src: url('../fonts/opensans-xb.eot??#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-xb.woff2') format('woff2'),
-    url('../fonts/opensans-xb.woff') format('woff');
+  src: url('../fonts/opensans/opensans-xb/opensans-xb.eot');
+  src: url('../fonts/opensans/opensans-xb/opensans-xb.eot??#iefix') format('embedded-opentype'),
+    url('../fonts/opensans/opensans-xb/opensans-xb.woff2') format('woff2'),
+    url('../fonts/opensans/opensans-xb/opensans-xb.woff') format('woff');
 }
   @font-face {
     font-family: 'opensans';
     font-style: italic;
     font-weight: 900;
-    src: url('../fonts/opensans-xbi.eot');
-    src: url('../fonts/opensans-xbi.eot??#iefix') format('embedded-opentype'),
-      url('../fonts/opensans-xbi.woff2') format('woff2'),
-      url('../fonts/opensans-xbi.woff') format('woff');
+    src: url('../fonts/opensans/opensans-xbi/opensans-xbi.eot');
+    src: url('../fonts/opensans/opensans-xbi/opensans-xbi.eot??#iefix') format('embedded-opentype'),
+      url('../fonts/opensans/opensans-xbi/opensans-xbi.woff2') format('woff2'),
+      url('../fonts/opensans/opensans-xbi/opensans-xbi.woff') format('woff');
   }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
@@ -414,7 +414,7 @@ button, input, select, textarea {
       .button:disabled,
       button:disabled,
       input[type="button"]:disabled,
-      input[type="reset"]:disabled, 
+      input[type="reset"]:disabled,
       input[type="submit"]:disabled {
         background: #ccc;
         color: #222;
