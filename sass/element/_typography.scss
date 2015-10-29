@@ -1,5 +1,5 @@
 // Fonts
-@include font-face("open-sans", "../fonts/opensans/opensans", normal, $file-formats: eot woff woff2);
+@include font-face("open-sans", "../fonts/opensans/opensans/opensans", normal, $file-formats: eot woff woff2);
 
 body {
   color: $base-font-color;
