@@ -30,12 +30,10 @@ function stiff_drink_preprocess_block(&$vars) {
   // Classes describing the position of the block within the region.
   if ($vars['block_id'] == 1) {
     $vars['classes_array'][] = 'first';
-    $vars['attributes_array']['class'][] = 'first';
   }
   // The last_in_region property is set in stiff_drink_page_alter().
   if (isset($vars['block']->last_in_region)) {
     $vars['classes_array'][] = 'last';
-    $vars['attributes_array']['class'][] = 'last';
   }
 }
 
