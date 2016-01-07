@@ -10,6 +10,11 @@ module.exports = function(grunt) {
         tasks: ['newer:imagemin']
       },
 
+      sprites: {
+        files: ['images/sprites/*.png'],
+        tasks: ['sprite']
+      },
+      
       css: {
         files: ['sass/**/*.scss'],
         tasks: ['sass']
@@ -43,9 +48,18 @@ module.exports = function(grunt) {
         }]
       }
     },
+    
+    sprite: {
+      dist: {
+        src: 'images/sprites/*.png',
+        dest: 'images/source/sprites.png',
+        destCss: 'css/sprite-png.css',
+        layout: 'top-down',
+      }
+    },
 
     browserSync: {
-      dev: {
+      dist: {
         bsFiles: {
           src: ['css/*.css']
         },
@@ -65,6 +79,7 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
