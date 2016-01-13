@@ -9,7 +9,8 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-drush": "0.0.6",
     "grunt-newer": "^0.8.0",
-    "grunt-spritesmith": "^6.1.0"
+    "grunt-spritesmith": "^6.1.0",
+    "grunt-svg-sprite": "^1.2.18"
   },
   "scripts": {
     "postinstall": "find node_modules/ -name '*.info' -type f -delete"

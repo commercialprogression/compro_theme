@@ -1,5 +1,6 @@
 name = Stiff Drink
 description = HTML5, bourbon.io and neat based theme.
+screenshot = images/optimized/screenshot.png
 core = 7.x
 
 ; Regions
@@ -20,6 +21,8 @@ features[] = favicon
 
 ; Stylesheets
 ; stylesheets[all][] = bower_components/normalize-css/normalize.css
+; stylesheets[all][] = css/sprite-png.css
+; stylesheets[all][] = css/sprite-svg.css
 stylesheets[all][] = css/style.css
 
 ; Scripts

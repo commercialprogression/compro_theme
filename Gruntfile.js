@@ -11,8 +11,8 @@ module.exports = function(grunt) {
       },
 
       sprites: {
-        files: ['images/sprites/*.png'],
-        tasks: ['sprite']
+        files: ['images/sprites//*.{svg,png}'],
+        tasks: ['svg_sprite', 'sprite']
       },
       
       css: {
@@ -52,9 +52,28 @@ module.exports = function(grunt) {
     sprite: {
       dist: {
         src: 'images/sprites/*.png',
-        dest: 'images/source/sprites.png',
+        dest: 'css/png/sprites.png',
         destCss: 'css/sprite-png.css',
-        layout: 'top-down',
+        algorithm: 'top-down'
+      }
+    },
+    
+    svg_sprite: {
+      dist: {
+        expand: true,
+        src: 'images/sprites/*.svg',
+        dest: '',
+        options: {
+          mode: {
+            css: {
+              render: {
+                css: {
+                  dest: 'sprite-svg.css'
+                }
+              }
+            }
+          }
+        }
       }
     },
 
@@ -78,11 +97,12 @@ module.exports = function(grunt) {
 
   });
 
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-spritesmith');
+  grunt.loadNpmTasks('grunt-svg-sprite');
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-browser-sync');
   grunt.loadNpmTasks('grunt-drush');
 
