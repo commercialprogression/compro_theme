@@ -15,6 +15,11 @@ module.exports = function(grunt) {
         tasks: ['svg_sprite', 'sprite']
       },
       
+      favicon: {
+        files: ['images/favicon.png'],
+        tasks: ['favicons']
+      },
+      
       css: {
         files: ['sass/**/*.scss'],
         tasks: ['sass']
@@ -49,6 +54,16 @@ module.exports = function(grunt) {
       }
     },
     
+    favicons: {
+      options: {
+        windowsTile: false
+      },
+      icons: {
+        src: 'images/favicon.png',
+        dest: 'images/favicons'
+      }
+    },
+                   
     sprite: {
       dist: {
         src: 'images/sprites/*.png',
@@ -76,7 +91,7 @@ module.exports = function(grunt) {
         }
       }
     },
-
+                   
     browserSync: {
       dist: {
         bsFiles: {
@@ -101,6 +116,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-svg-sprite');
+  grunt.loadNpmTasks('grunt-favicons');
   grunt.loadNpmTasks('grunt-newer');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-browser-sync');
