@@ -1,5 +1,5 @@
 {
-  "name": "stiff_drink",
+  "name": "compro_theme",
   "version": "1.0.0",
   "authors": [
     "Chris Keller <chris@commercialprogression.com>"
@@ -8,7 +8,7 @@
   "main": "",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "https://bitbucket.org/alexfisher/stiff_drink",
+  "homepage": "https://bitbucket.org/alexfisher/compro_theme",
   "private": true,
   "ignore": [
     "**/.*",

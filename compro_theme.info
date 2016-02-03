@@ -1,4 +1,4 @@
-name = Stiff Drink
+name = Compro theme
 description = HTML5, bourbon.io and neat based theme.
 screenshot = images/optimized/screenshot.png
 core = 7.x
@@ -29,4 +29,4 @@ stylesheets[all][] = css/style.css
 scripts[] = js/behavior.js
 
 ; Settings
-settings[stiff_drink_disable_core_css] = 0
+settings[compro_theme_disable_core_css] = 0

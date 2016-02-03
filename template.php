@@ -2,13 +2,13 @@
 
 /**
  * @file
- * Overrides and any custom code for the stiff drink theme.
+ * Overrides and any custom code for the compro theme.
  */
 
 /**
  * Implementation of hook_theme().
  */
-function stiff_drink_theme() {
+function compro_theme_theme() {
   $items = array();
 
   // Split out pager list into separate theme function.
@@ -26,12 +26,12 @@ function stiff_drink_theme() {
 /**
  * Override or insert variables into the block templates.
  */
-function stiff_drink_preprocess_block(&$vars) {
+function compro_theme_preprocess_block(&$vars) {
   // Classes describing the position of the block within the region.
   if ($vars['block_id'] == 1) {
     $vars['classes_array'][] = 'first';
   }
-  // The last_in_region property is set in stiff_drink_page_alter().
+  // The last_in_region property is set in compro_theme_page_alter().
   if (isset($vars['block']->last_in_region)) {
     $vars['classes_array'][] = 'last';
   }
@@ -40,14 +40,14 @@ function stiff_drink_preprocess_block(&$vars) {
 /**
  * Implements template_preprocess_entity().
  */
-function stiff_drink_preprocess_entity(&$vars) {
+function compro_theme_preprocess_entity(&$vars) {
   $vars['classes_array'][] = drupal_html_class('view-mode-' . $vars['view_mode']);
 }
 
 /**
  * Implements template_preprocess_node().
  */
-function stiff_drink_preprocess_node(&$vars) {
+function compro_theme_preprocess_node(&$vars) {
   $vars['classes_array'][] = drupal_html_class('view-mode-' . $vars['view_mode']);
   unset($vars['content']['links']);
 }
@@ -55,14 +55,14 @@ function stiff_drink_preprocess_node(&$vars) {
 /**
  * Implements template_preprocess_region().
  */
-function stiff_drink_preprocess_region(&$vars) {
+function compro_theme_preprocess_region(&$vars) {
   $vars['attributes'] = drupal_attributes($vars['attributes_array']);
 }
 
 /**
  * Implements hook_page_alter().
  */
-function stiff_drink_page_alter(&$page) {
+function compro_theme_page_alter(&$page) {
   // Look in each visible region for blocks.
   foreach (system_region_list($GLOBALS['theme'], REGIONS_VISIBLE) as $region => $name) {
     if (!empty($page[$region])) {
@@ -81,7 +81,7 @@ function stiff_drink_page_alter(&$page) {
 /**
  * Override of theme('breadcrumb').
  */
-function stiff_drink_breadcrumb($vars) {
+function compro_theme_breadcrumb($vars) {
   $output = '<div class="breadcrumb">';
 
   // Add current page onto the end.
@@ -112,7 +112,7 @@ function stiff_drink_breadcrumb($vars) {
 /**
  * Override the default button theming to actually use buttons.
  */
-function stiff_drink_button($vars) {
+function compro_theme_button($vars) {
   $element = $vars['element'];
   $element['#attributes']['type'] = 'submit';
   element_set_attributes($element, array('id', 'name', 'value'));
@@ -128,7 +128,7 @@ function stiff_drink_button($vars) {
 /**
  * Override of theme_image().
  */
-function stiff_drink_image($vars) {
+function compro_theme_image($vars) {
   $attributes = $vars['attributes'];
   $attributes['src'] = file_create_url($vars['path']);
 
@@ -137,19 +137,19 @@ function stiff_drink_image($vars) {
       $attributes[$key] = $vars[$key];
     }
   }
-  
+
   // Just in case there isn't an alt attribute by this point.
   if (!isset($attributes['alt'])) {
     $attributes['alt'] = '';
   }
-  
+
   return '<img' . drupal_attributes($attributes) . ' />';
 }
 
 /**
  * Override of theme_pager().
  */
-function stiff_drink_pager($vars) {
+function compro_theme_pager($vars) {
   $tags = $vars['tags'];
   $element = $vars['element'];
   $parameters = $vars['parameters'];
@@ -192,7 +192,7 @@ function stiff_drink_pager($vars) {
 /**
  * Return an array suitable for theme_links() rather than marked up HTML link.
  */
-function stiff_drink_pager_link($vars) {
+function compro_theme_pager_link($vars) {
   $text = $vars['text'];
   $page_new = $vars['page_new'];
   $element = $vars['element'];
@@ -242,7 +242,7 @@ function stiff_drink_pager_link($vars) {
 /**
  * Split out page list generation into its own function.
  */
-function stiff_drink_pager_list($vars) {
+function compro_theme_pager_list($vars) {
   $tags = $vars['tags'];
   $element = $vars['element'];
   $parameters = $vars['parameters'];
@@ -315,7 +315,7 @@ function stiff_drink_pager_list($vars) {
 /**
  * Override of theme('status_messages').
  */
-function stiff_drink_status_messages($vars) {
+function compro_theme_status_messages($vars) {
   $output = '';
   if (!isset($vars['messages'])) {
     $display = $vars['display'];
@@ -355,7 +355,7 @@ function stiff_drink_status_messages($vars) {
  * Override of theme('textarea').
  * Deprecate misc/textarea.js in favor of using the 'resize' CSS3 property.
  */
-function stiff_drink_textarea($vars) {
+function compro_theme_textarea($vars) {
   $element = $vars['element'];
   $element['#attributes']['name'] = $element['#name'];
   $element['#attributes']['id'] = $element['#id'];
@@ -381,7 +381,7 @@ function stiff_drink_textarea($vars) {
 /**
  * Override of theme_views_mini_pager().
  */
-function stiff_drink_views_mini_pager($vars) {
+function compro_theme_views_mini_pager($vars) {
   $tags = $vars['tags'];
   $quantity = $vars['quantity'];
   $element = $vars['element'];
@@ -425,9 +425,9 @@ function stiff_drink_views_mini_pager($vars) {
 /**
  * Implements hook_css_alter()
  */
-function stiff_drink_css_alter(&$css) {
+function compro_theme_css_alter(&$css) {
   // Remove Drupal core CSS.
-  if (theme_get_setting('stiff_drink_disable_core_css')) {
+  if (theme_get_setting('compro_theme_disable_core_css')) {
     foreach($css as $path => $values) {
       if(strpos($path, 'modules/') === 0) {
         unset($css[$path]);
