@@ -6,35 +6,58 @@
  */
 
 /**
- * Implementation of hook_theme().
+ * Implements template_preprocess_html().
  */
-function compro_theme_theme() {
-  $items = array();
+function compro_theme_preprocess_html(&$vars) {
+  // Add an X-UA-COMPATIBLE meta tag.
+  drupal_add_html_head(array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'http-equiv' => 'X-UA-COMPATIBLE',
+      'content' => 'IE=edge',
+    ),
+  ), 'compro_theme_xua_compatible');
 
-  // Split out pager list into separate theme function.
-  $items['pager_list'] = array('arguments' => array(
-    'tags' => array(),
-    'limit' => 10,
-    'element' => 0,
-    'parameters' => array(),
-    'quantity' => 9,
-  ));
+  // Add a viewport meta tag.
+  drupal_add_html_head(array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1',
+    ),
+  ), 'compro_theme_viewport');
 
-  return $items;
+  // Skip link.
+  $vars['skip_link'] = array(
+    '#type' => 'container',
+    '#attributes' => array(
+      'id' => 'skip-link',
+      'class' => array(
+        'hide',
+      ),
+    ),
+    'skip_link' => array(
+      '#markup' => l(t('Skip to main content'), '', array(
+        'attributes' => array(
+          'class' => array(
+            'element-invisible',
+            'element-focusable',
+          ),
+        ),
+        'external' => TRUE,
+        'fragment' => 'content-regions',
+      )),
+    ),
+  );
 }
 
 /**
- * Override or insert variables into the block templates.
+ * Implements template_preprocess_region().
  */
-function compro_theme_preprocess_block(&$vars) {
-  // Classes describing the position of the block within the region.
-  if ($vars['block_id'] == 1) {
-    $vars['classes_array'][] = 'first';
-  }
-  // The last_in_region property is set in compro_theme_page_alter().
-  if (isset($vars['block']->last_in_region)) {
-    $vars['classes_array'][] = 'last';
-  }
+function compro_theme_preprocess_region(&$vars) {
+  $vars['attributes'] = drupal_attributes($vars['attributes_array']);
 }
 
 /**
@@ -53,10 +76,35 @@ function compro_theme_preprocess_node(&$vars) {
 }
 
 /**
- * Implements template_preprocess_region().
+ * Override or insert variables into the block templates.
  */
-function compro_theme_preprocess_region(&$vars) {
-  $vars['attributes'] = drupal_attributes($vars['attributes_array']);
+function compro_theme_preprocess_block(&$vars) {
+  // Classes describing the position of the block within the region.
+  if ($vars['block_id'] == 1) {
+    $vars['classes_array'][] = 'first';
+  }
+  // The last_in_region property is set in compro_theme_page_alter().
+  if (isset($vars['block']->last_in_region)) {
+    $vars['classes_array'][] = 'last';
+  }
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function compro_theme_theme() {
+  $items = array();
+
+  // Split out pager list into separate theme function.
+  $items['pager_list'] = array('arguments' => array(
+    'tags' => array(),
+    'limit' => 10,
+    'element' => 0,
+    'parameters' => array(),
+    'quantity' => 9,
+  ));
+
+  return $items;
 }
 
 /**
