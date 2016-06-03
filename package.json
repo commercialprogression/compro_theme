@@ -2,6 +2,7 @@
   "name": "compro-theme",
   "version": "0.2.0",
   "devDependencies": {
+    "bower": "^1.7.9",
     "grunt": "^0.4.5",
     "grunt-browser-sync": "^2.0.0",
     "grunt-contrib-imagemin": "^1.0.0",
@@ -14,6 +15,6 @@
     "grunt-svg-sprite": "^1.2.18"
   },
   "scripts": {
-    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete && node_modules/bower/bin/bower install"
   }
 }
