@@ -18,8 +18,10 @@
     'region-' ~ region|clean_class,
   ]
 %}
-{% if content %}
-  <div{{ attributes.addClass(classes) }}>
-    {{ content }}
-  </div>
-{% endif %}
+{% block content %}
+  {% if content %}
+    <div{{ attributes.addClass(classes) }}>
+      {{ content }}
+    </div>
+  {% endif %}
+{% endblock %}
