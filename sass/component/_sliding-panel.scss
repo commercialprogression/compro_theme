@@ -1,26 +1,26 @@
-$sliding-panel-breakpoint: $large-screen-down;
+$sliding-panel-breakpoint: 960px;
 $sliding-panel-width: 220px;
 $sliding-panel-background: #fff;
 
 .sliding-panel-button,
 .sliding-panel-close {
-  @include display(none);
-  
+  display: none;
+
   @include media($sliding-panel-breakpoint) {
-    @include display(block);
+    display: block;
   }
-  
+
 }
 
 .sliding-panel-content {
-  
+
   @include media($sliding-panel-breakpoint) {
-    @include display(block);
     @include position(fixed, 0 auto 0 0);
     @include size($sliding-panel-width 100%);
     @include transform(translateX(- $sliding-panel-width));
     @include transition(all 0.25s linear);
     background: $sliding-panel-background;
+    display: block;
     -webkit-overflow-scrolling: touch;
     overflow-y: auto;
     z-index: 999999;
@@ -28,9 +28,9 @@ $sliding-panel-background: #fff;
     &.is-visible {
       @include transform(translateX(0));
     }
-    
+
   }
-  
+
 }
 
 .sliding-panel-fade-screen {

@@ -6,4 +6,3 @@ global-styling:
   js:
     theme:
       js/behavior.js: {}
-      js/vendor/modernizr-custom.js: {}

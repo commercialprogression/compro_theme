@@ -20,5 +20,3 @@ regions:
 features:
   - logo
   - favicon
-settings:
-  compro_theme_disable_core_css: 0

@@ -1,5 +1,9 @@
-// Fonts
-@include font-face("open-sans", "../fonts/opensans/opensans/opensans", normal, $file-formats: eot woff woff2);
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/opensans/opensans.eot'),
+       url('../fonts/opensans/opensans.woff')
+       url('../fonts/opensans/opensans.woff2');
+}
 
 body {
   color: $base-font-color;
