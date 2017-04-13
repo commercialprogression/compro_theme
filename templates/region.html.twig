@@ -21,7 +21,9 @@
 {% block content %}
   {% if content %}
     <div{{ attributes.addClass(classes) }}>
-      {{ content }}
+      <div class="inner">
+        {{ content }}
+      </div>
     </div>
   {% endif %}
 {% endblock %}

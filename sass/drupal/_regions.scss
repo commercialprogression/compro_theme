@@ -1,0 +1,9 @@
+.region {
+
+  > .inner {
+    @include padding(0 $base-spacing);
+    margin: 0 auto;
+    max-width: $extra-large-screen;
+  }
+
+}

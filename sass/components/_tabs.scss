@@ -9,7 +9,7 @@ $tab-border: 1px solid $base-border-color;
 $tab-active-background: $base-background-color;
 $tab-inactive-color: $base-background-color;
 $tab-inactive-hover-color: silver;
-$tab-mode: $medium-screen;
+$tab-mode: $large-screen;
 
 #tabs {
   @include clearfix;
@@ -24,7 +24,7 @@ $tab-mode: $medium-screen;
   li {
     list-style: none;
 
-    @include media($tab-mode) {
+    @media screen and (max-width: $tab-mode) {
       display: inline;
     }
   }
@@ -36,10 +36,10 @@ $tab-mode: $medium-screen;
     color: $tab-link-color;
     display: block;
     font-weight: 400;
-    padding: ($base-spacing / 2) $gutter;
+    padding: $base-spacing / 2;
     text-decoration: none;
 
-    @include media($tab-mode) {
+    @media screen and (max-width: $tab-mode) {
       display: inline-block;
       border: 0;
     }
@@ -55,7 +55,7 @@ $tab-mode: $medium-screen;
     &.active {
       border-bottom: 0;
 
-      @include media($tab-mode) {
+      @media screen and (max-width: $tab-mode) {
         border: $tab-border;
         border-bottom-color: $tab-active-background;
         margin-bottom: -1px;

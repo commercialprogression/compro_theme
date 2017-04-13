@@ -1,11 +1,4 @@
-@font-face {
-  font-family: 'open-sans';
-  src: url('../fonts/opensans/opensans.eot'),
-       url('../fonts/opensans/opensans.woff')
-       url('../fonts/opensans/opensans.woff2');
-}
-
-body {
+html {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -19,7 +12,7 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $base-font-size;
+  font-size: modular-scale(1);
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
@@ -46,10 +39,4 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: $base-spacing 0;
-}
-
-img,
-picture {
-  margin: 0;
-  max-width: 100%;
 }
