@@ -13,15 +13,16 @@
  */
 #}
 {%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-  ]
+set classes = [
+  'region',
+  'region-' ~ region|clean_class,
+]
 %}
+{% extends 'region.html.twig' %}
 {% block content %}
   {% if content %}
-    <div{{ attributes.addClass(classes) }}>
-      <div class="inner">
+    <div class="region region-pre-header">
+      <div class="inner container">
         {{ content }}
       </div>
     </div>

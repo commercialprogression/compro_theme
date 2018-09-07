@@ -1,0 +1,25 @@
+input.button,
+button.button,
+a.button,
+button,
+.button > a:only-child {
+
+}
+
+input.button:hover,
+button.button:hover,
+a.button:hover {
+
+}
+input.button:active,
+button.button:active,
+a.button:active {
+
+}
+
+input.button.is-disabled,
+button.button.is-disabled,
+input.button:disabled,
+button.button:disabled {
+
+}

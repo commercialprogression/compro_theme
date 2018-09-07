@@ -1,0 +1,16 @@
+{% extends 'region.html.twig' %}
+{% block content %}
+  {% if content %}
+    <header class="region region-header">
+      <div class="inner container">
+        <button class="hamburger hamburger--squeeze" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        {{ content }}
+      </div>
+      <div class="mobile-preheader">{{ drupal_region('pre_header') }}</div>
+    </header>
+  {% endif %}
+{% endblock %}

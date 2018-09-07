@@ -13,11 +13,13 @@
  */
 #}
 {%
-  set classes = [
-    'region',
-    'region-' ~ region|clean_class,
-  ]
+set classes = [
+  'region',
+  'region-' ~ region|clean_class,
+  'container'
+]
 %}
+{% extends 'region.html.twig' %}
 {% block content %}
   {% if content %}
     <div{{ attributes.addClass(classes) }}>

@@ -1,0 +1,37 @@
+.block-copyright-block a {
+  color: #fff;
+}
+
+.block-copyright-block a:hover {
+  color: #ffcb05;
+}
+
+.block-compro-credit-block {
+  float: right;
+}
+
+.block-compro-credit a {
+  color: #fff;
+}
+
+.block-compro-credit a:hover {
+  color: #ffcb05;
+}
+
+@media all and (max-width: 1060px) {
+  .block-compro-credit-block {
+    clear: both;
+    display: block;
+    font-size: 12px;
+    float: none;
+    margin: 2rem 0 0;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 959px) {
+  .block-compro-credit {
+    text-align: center;
+  }
+}

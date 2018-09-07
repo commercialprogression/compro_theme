@@ -1,0 +1,22 @@
+.menu--footer li {
+  display: inline-block;
+}
+
+.menu--footer li a {
+  color: white;
+  padding: .5em 1em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu--footer a:hover {
+  color: #ffcb05;
+}
+
+@media all and (max-width: 959px) {
+
+  .menu--footer,
+  .block-contact-info {
+    display: none;
+  }
+}

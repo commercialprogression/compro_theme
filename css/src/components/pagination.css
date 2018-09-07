@@ -1,0 +1,12 @@
+.pager {
+  text-align: center;
+  margin-top: 100px;
+}
+.pager__item {
+  display: inline-block;
+  margin: .5rem;
+}
+.pager__item.is-active a {
+  color: #c69b10;
+  font-weight: 600;
+}

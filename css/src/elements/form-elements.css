@@ -1,0 +1,28 @@
+/* Fix for Firefox faded placeholder color */
+::-moz-placeholder {
+  opacity: 1;
+}
+
+input[type="text"]:focus {
+  border-color: #40658f;
+  transition: border-color .25s linear;
+}
+
+label,
+fieldset legend {
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  padding: 0.5rem;
+}

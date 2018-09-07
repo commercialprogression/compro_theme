@@ -1,0 +1,20 @@
+.form-wrapper label {
+  display:inline-block;
+}
+
+label.form-required::after {
+  content: '*';
+  color: red;
+  margin-left: 5px;
+}
+
+.description {
+  margin-top: 8px;
+  margin-bottom: 19px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.form-select a:hover {
+  font-weight:400;
+}

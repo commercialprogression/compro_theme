@@ -16,11 +16,15 @@
   set classes = [
     'region',
     'region-' ~ region|clean_class,
+    'bb',
+    'bw3',
+    'b--um-maze',
   ]
 %}
+{% extends 'region.html.twig' %}
 {% block content %}
   {% if content %}
-    <div{{ attributes.addClass(classes) }}>
+    <div{{ attributes.addClass(classes) }} style="min-height: 280px; max-height: 608px;">
       <div class="inner">
         {{ content }}
       </div>

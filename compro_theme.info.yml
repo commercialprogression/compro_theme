@@ -6,19 +6,19 @@ screenshot: images/optimized/screenshot.png
 core: 8.x
 libraries:
   - compro_theme/global-styling
+libraries-override:
+  classy/base: false
 regions:
-  page_top: Page top
-  header: Header
-  nav: Nav
-  pre_content: Pre-content
-  content: Content
-  post_content: Post-content
-  pre_footer: Pre-footer
-  footer: Footer
-  post_footer: Post-footer
-  page_bottom: Page bottom
+  pre_header: 'Pre-header'
+  header: 'Header'
+  hero: 'Hero'
+  pre_content: 'Pre-content'
+  sidebar: 'Sidebar'
+  content: 'Content'
+  post_content: 'Post-content'
+  pre_footer: 'Pre-footer'
+  footer: 'Footer'
+  post_footer: 'Post-footer'
 features:
   - logo
   - favicon
-settings:
-  compro_theme_disable_core_css: 0

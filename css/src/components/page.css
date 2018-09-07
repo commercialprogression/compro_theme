@@ -1,0 +1,53 @@
+.region.region-pre-content {
+  max-width: 100%;
+}
+
+.region.region-content {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.path-create .region.region-content,
+.path-frontpage .region.region-content {
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+.sidebar .sidebar-and-content {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-title {
+  padding: 0px 0px;
+}
+.sidebar .region-sidebar {
+  padding: 0 1rem;
+}
+
+@media all and (min-width: 740px) {
+  .region.region-content {
+    margin-top: 3rem;
+  }
+
+  .sidebar .region-sidebar {
+    width: 260px;
+    float: left;
+    padding: 0 1rem;
+    margin-top: 300px;
+  }
+
+  .sidebar .region-content {
+    width: calc(100vw - 315px);
+    max-width: 860px;
+    float: left;
+  }
+
+  .sidebar .block-page-title-block {
+    max-width: 1160px;
+    margin-left: -260px;
+  }
+
+}

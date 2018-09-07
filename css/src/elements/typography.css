@@ -1,0 +1,57 @@
+html {
+  color: #4a4a4a;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-size: 3.625rem;
+  font-weight: 300;
+}
+
+h2 {
+  color: #00274c;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #40658F;
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #00274C;
+}
+
+a {
+  color: #40658F;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s ease-in-out;
+}
+
+p {
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+
+a:hover,
+a:active {
+  color: #00274C;
+  transition: all 0.15s ease-in-out;
+}
+*:focus {
+  outline: none;
+}
