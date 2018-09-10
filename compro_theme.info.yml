@@ -2,7 +2,6 @@ name: Compro Theme
 type: theme
 base theme: classy
 description: Commercial Progression's theme base
-screenshot: images/optimized/screenshot.png
 core: 8.x
 libraries:
   - compro_theme/global-styling
