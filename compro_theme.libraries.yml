@@ -8,3 +8,27 @@ global-styling:
   dependencies:
     - core/drupal
     - core/jquery
+
+compro-animate:
+  version: 3.5.x
+  css:
+    base:
+      libraries/compro-animate/animate/animate.css: {}
+  js:
+    libraries/compro-animate/compro-animate.js: {}
+  dependencies:
+  - core/jquery
+
+compro-autotrack:
+  version: 2.4.x
+  js:
+    libraries/compro-autotrack/autotrack/autotrack.js: {}
+    libraries/compro-autotrack/compro-autotrack.js: {}
+  dependencies:
+  - google_analytics/google_analytics
+
+compro-fontawesome:
+  version: 5.0.x
+  css:
+    component:
+      libraries/compro-fontawesome/css/fontawesome-all.css: {}

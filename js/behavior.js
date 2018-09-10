@@ -49,6 +49,19 @@
           $mainMenu.find('> .menu > .menu-item > .menu')
               .height($(this).next().find('ul.menu').outerHeight());
         });
+
+        // Handle data-src for video section type.
+        var $video = $('.media-video.view-mode-default');
+        $video.each(function() {
+          var $iframe = $(this).find('iframe');
+          var mobileDataSrc = $iframe.attr('data-src');
+          var mobileSrc = $iframe.attr('src');
+
+          // Check to see if we have a src, if not add it.
+          if (typeof mobileSrc === typeof undefined || mobileSrc === false) {
+            $iframe.attr('src', mobileDataSrc);
+          }
+        });
       }
     }
   };

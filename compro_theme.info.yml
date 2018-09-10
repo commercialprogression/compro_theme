@@ -6,6 +6,9 @@ screenshot: images/optimized/screenshot.png
 core: 8.x
 libraries:
   - compro_theme/global-styling
+  - compro_theme/compro-animate
+  - compro_theme/compro-autotrack
+  - compro_theme/compro-fontawesome
 libraries-override:
   classy/base: false
 regions:

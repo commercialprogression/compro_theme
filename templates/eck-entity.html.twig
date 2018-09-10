@@ -6,6 +6,6 @@ set classes = [
 ]
 %}
 
-<div {{ attributes.addClass(classes) }}>
-    {{ entity }}
-</div>
+{% spaceless %}
+    <{{ html_tag }}{{ attributes.addClass(classes) }}>{{ entity }}</{{ html_tag }}>
+{% endspaceless %}

@@ -20,10 +20,10 @@
 %}
 {% block content %}
   {% if content %}
-    <div{{ attributes.addClass(classes) }}>
+    <{{ html_tag }}{{ attributes.addClass(classes) }}>
       <div class="inner">
         {{ content }}
       </div>
-    </div>
+    </{{ html_tag }}>
   {% endif %}
 {% endblock %}
